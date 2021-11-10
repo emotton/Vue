@@ -28,3 +28,13 @@ executar
 --------
 npm run serve
 
+SSR (Server Side Render)
+========================
+https://ssr.vuejs.org/
+
+npm install vue-server-renderer
+
+
+AULAS
+=====
+https://www.youtube.com/watch?v=h8Z-pRhe-dw
