@@ -1,9 +1,10 @@
 <template>
   <div>
-    <Header/>
+    <Header :esta_logado="true"/>
     <PrimeiroComponente />
     <LifeCycle />
     <Pessoa />
+    <Formulario />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from './components/Header.vue';
 import PrimeiroComponente from './components/PrimeiroComponente.vue';
 import LifeCycle from './components/LifeCycle.vue';
 import Pessoa from './components/Pessoa.vue';
+import Formulario from './components/Formulario.vue';
 
 export default {
     name: 'App',
@@ -19,7 +21,8 @@ export default {
       Header,
       PrimeiroComponente,
       LifeCycle,
-      Pessoa
+      Pessoa,
+      Formulario
     }
 }
 </script>

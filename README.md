@@ -37,4 +37,4 @@ npm install vue-server-renderer
 
 AULAS
 =====
-https://www.youtube.com/watch?v=h8Z-pRhe-dw
+https://www.youtube.com/watch?v=-B78d9052zY

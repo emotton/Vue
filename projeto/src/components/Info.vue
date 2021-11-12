@@ -22,19 +22,29 @@
       Para acessar meu portfólio
       <a v-bind:href="meu_link" target="_blank">basta clicar aqui</a>
     </p>
+    <div>
+      <p>E-mail : {{ p_email }}</p>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: "Info",
+  props: {
+    p_email: "",
+    esta_trabalhando: false
+  },
   data() {
     return {
-      esta_trabalhando: false,
       mostrar_email: false,
       msg_mostrar_email: "Mostrar",
       tecnologias: ["Node", "Python", "GO", "Java"],
-      tecnologias_extra: [{ id: 1, nome: 'Oracle'}, { id: 2, nome: 'Postgres'}, { id:3, nome: 'MySQL'}],
+      tecnologias_extra: [
+        { id: 1, nome: "Oracle" },
+        { id: 2, nome: "Postgres" },
+        { id: 3, nome: "MySQL" },
+      ],
       email: "emotton@gmail.com",
       meu_link: "http://www.globo.com",
     };
@@ -42,9 +52,7 @@ export default {
   methods: {
     showEmail() {
       this.mostrar_email = !this.mostrar_email;
-      this.msg_mostrar_email = this.mostrar_email
-        ? "Esconder"
-        : "Mostrar";
+      this.msg_mostrar_email = this.mostrar_email ? "Esconder" : "Mostrar";
     },
   },
 };
