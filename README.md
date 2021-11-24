@@ -29,10 +29,14 @@ executar
 npm run serve
 
 SSR (Server Side Render)
-========================
+========================npm
 https://ssr.vuejs.org/
 
 npm install vue-server-renderer
+
+VueEX
+=====
+npm install vuex
 
 
 AULAS
