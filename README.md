@@ -22,7 +22,7 @@ CLI
 
 Criar Projetos
 ==============
-vue create <projeto>
+vue create :projeto:
 
 executar
 --------
