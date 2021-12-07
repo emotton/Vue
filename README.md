@@ -22,19 +22,24 @@ CLI
 
 Criar Projetos
 ==============
-vue create <projeto>
+vue create :projeto:
 
 executar
 --------
 npm run serve
 
 SSR (Server Side Render)
-========================
+========================npm
 https://ssr.vuejs.org/
 
 npm install vue-server-renderer
+
+VueEX
+=====
+npm install vuex
 
 
 AULAS
 =====
 https://www.youtube.com/watch?v=-B78d9052zY
+
