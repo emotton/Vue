@@ -17,8 +17,8 @@ ou
 
 CLI 
 -----------------------------
--> npm install -g @vue/cli
--> yarn global add @vue/cli
+### npm install -g @vue/cli
+### yarn global add @vue/cli
 
 Criar Projetos
 ==============
