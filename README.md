@@ -40,6 +40,8 @@ npm install vuex
 
 vue create :projeto:
 
+npm i vue-router
+
 
 AULAS
 =====
