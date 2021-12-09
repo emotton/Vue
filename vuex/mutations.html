@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js - Vuex - Mutations</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.1.1/vuex.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button @click="menos">Menos</button>
+        <p>{{valor}}</p>
+        <button @click="mais">Mais</button>
+    </div>
+    <script>
+        const store = new Vuex.Store({
+            state: {
+                valor: 0
+            },
+            mutations: {
+                increment (state){
+                    state.valor++
+                },
+                decrement (state){
+                    state.valor--
+                }
+            }
+        });
+        new Vue({
+            el: "#app",
+            computed: {
+                valor: function(){
+                    return store.state.valor;
+                }
+            },
+            methods: {
+                menos: function(){
+                    store.commit('decrement')
+                },
+                mais: function(){
+                    store.commit('increment')
+                }
+            },
+        })
+    </script>
+</body>
+</html>

@@ -38,6 +38,8 @@ VueEX
 =====
 npm install vuex
 
+vue create :projeto:
+
 
 AULAS
 =====
