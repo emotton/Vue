@@ -42,7 +42,7 @@ vue create :projeto:
 
 npm i vue-router
 
-
+npm install --save vue-sessionstorage
 AULAS
 =====
 https://www.youtube.com/watch?v=-B78d9052zY
