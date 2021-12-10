@@ -12,8 +12,11 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
+  sobrenome = "Motton";
+
   get nome(){
-    return this.$store.state.nome;
+    return this.$store.state.nome + " " + this.sobrenome;
   }
+
 }
 </script>
