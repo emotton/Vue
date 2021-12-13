@@ -54,3 +54,17 @@ Vue Resource
 npm i -S vue-resource
 
 npm i -S vue-router vue-resource materialize-css
+
+
+Vuetify
+=======
+
+vue create :app:
+
+cd :app:
+
+vue add vuetify
+
+vue ui
+
+vue add pug
