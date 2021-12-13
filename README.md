@@ -47,3 +47,10 @@ AULAS
 =====
 https://www.youtube.com/watch?v=-B78d9052zY
 
+
+Vue Resource
+============
+
+npm i -S vue-resource
+
+npm i -S vue-router vue-resource materialize-css
