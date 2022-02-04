@@ -16,15 +16,16 @@
 <script>
 import { mapState, mapGetters, mapActions } from "vuex";
 export default {
-  name: "HelloWorld",
+  name: "CounterTest",
   computed: {
-    ...mapState("counter", ["counter"]),
-    ...mapGetters(["counter"]),
-    ...mapState("counter2", ["counter2"]),
-    ...mapGetters(["counter2"]),
+    ...mapState("contador", ["counter"]),
+    ...mapState("contador2", ["counter2"]),
+    ...mapGetters("contador", ["counter"]),
+    ...mapGetters("contador2", ["counter2"]),
   },
   methods: {
-    ...mapActions(["decrement", "increment", "decrement2", "increment2"]),
+    ...mapActions("contador", ["decrement", "increment"]),
+    ...mapActions("contador2", ["decrement2","increment2"]),
   },
 };
 </script>
